@@ -5,7 +5,6 @@ start_time = time.time()
 import random
 from statistics import mean
 import multiprocessing
-import arcpy
 
 numGames = 1000000
 
@@ -55,4 +54,4 @@ if __name__ == '__main__':
     # Output how long the process took.
     print ("--- %s seconds ---" % (time.time() - start_time))
 
-    print "hello"
+    print ("-" * 50 + "\nFinished!")
