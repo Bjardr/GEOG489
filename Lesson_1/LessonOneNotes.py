@@ -54,3 +54,5 @@ if __name__ == '__main__':
     mp_handler()
     # Output how long the process took.
     print ("--- %s seconds ---" % (time.time() - start_time))
+
+    print "hello"
