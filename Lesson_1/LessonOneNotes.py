@@ -10,7 +10,6 @@ numGames = 1000000
 
 def mp_handler():
     processors = multiprocessing.cpu_count()
-    print(processors)
 
     with multiprocessing.Pool(processors) as myPool:
         ## The Map function part of the MapReduce is on the right of the = and the Reduce part on the left where we are aggregating the results to a list.
@@ -58,3 +57,5 @@ if __name__ == '__main__':
     print ("--- %s seconds ---" % (time.time() - start_time))
 
     print ("-" * 50 + "\nFinished!")
+
+    print(processors)
