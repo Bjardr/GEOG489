@@ -57,5 +57,3 @@ if __name__ == '__main__':
     print ("--- %s seconds ---" % (time.time() - start_time))
 
     print ("-" * 50 + "\nFinished!")
-
-    print(processors)
