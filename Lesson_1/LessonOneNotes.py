@@ -10,6 +10,7 @@ numGames = 1000000
 
 def mp_handler():
     processors = multiprocessing.cpu_count()
+    print (processors)
 
     with multiprocessing.Pool(processors) as myPool:
         ## The Map function part of the MapReduce is on the right of the = and the Reduce part on the left where we are aggregating the results to a list.
