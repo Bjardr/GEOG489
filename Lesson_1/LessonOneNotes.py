@@ -9,7 +9,10 @@ import multiprocessing
 numGames = 1000000
 
 def mp_handler():
-    with multiprocessing.Pool(multiprocessing.cpu_count()) as myPool:
+    processors = multiprocessing.cpu_count()
+
+
+    with multiprocessing.Pool(processors) as myPool:
         ## The Map function part of the MapReduce is on the right of the = and the Reduce part on the left where we are aggregating the results to a list.
         turns = myPool.map(cherryO, range(numGames))
         # Uncomment this line to print out the list of total turns (but note this will slow down your code's execution)
